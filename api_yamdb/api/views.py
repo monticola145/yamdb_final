@@ -12,17 +12,17 @@ from rest_framework.response import Response
 from rest_framework.validators import ValidationError
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
-from reviews.models import Category, Genre, Review, Title
-from users.models import User
 
 from .filters import TitleFilter
 from .permissions import (CreateOrIsAuthorOrReadOnly, IsAdmin,
                           IsAdminOrReadOnly, IsGuest)
 from .serializers import (AdminSerializer, CategorySerializer,
-                          CommentSerializer, GenreSerializer, ReviewSerializer,
-                          SignupSerializer, TitleReadSerializer,
-                          TitleWriteSerializer, TokenSerializer,
-                          UserSerializer)
+                          CommentSerializer, GenreSerializer,
+                          ReviewSerializer, SignupSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
+                          TokenSerializer, UserSerializer)
+from reviews.models import Category, Genre, Review, Title
+from users.models import User
 
 
 class AbstractViewSet(

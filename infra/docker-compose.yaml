@@ -7,6 +7,11 @@ services:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
+    # Странный момент: миграции через команду докера проходят, админка открывается, 
+    # но тесты (python manage.py test) не проходятся, так как выскакивает:
+    # django.db.utils.OperationalError: could not translate host name "db" to address: Unknown host
+    # Я неделю не мог справиться никак с этим, время поджимает, потому и отправил проект в таком виде
+    # не могли бы Вы мне помочь?
 
   web:
     image: monticola/api_yamdb:v1
@@ -34,4 +39,3 @@ volumes:
 
   static_value:
   media_value:
- 
