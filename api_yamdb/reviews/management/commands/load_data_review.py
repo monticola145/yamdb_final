@@ -1,9 +1,9 @@
 from csv import DictReader
+
 from django.conf import settings
 from django.core.management import BaseCommand
 
 from reviews.models import Review
-
 
 ALREADY_EXISTS_IN_DATA_BASE = """
 Данные уже загружены в БД! Если нужно загрузить их снова,

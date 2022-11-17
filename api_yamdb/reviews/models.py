@@ -3,7 +3,6 @@ from django.db import models
 
 from users.models import User
 
-
 AMOUNT_LETTERS = 15
 
 LIMIT_VALUE = 10
