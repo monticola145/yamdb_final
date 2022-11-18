@@ -1,6 +1,6 @@
 # Проект YAMDB
 
-[![Actions Status](https://github.com/monticola145/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)]
+![Actions Status](https://github.com/monticola145/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Ссылки на проект
 
