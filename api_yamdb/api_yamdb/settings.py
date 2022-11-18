@@ -11,7 +11,7 @@ DEBUG = False   # идея интересная, но не очень понял
 #   DEBUG = True
 # Так?
 
-ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default=*)]
+ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
