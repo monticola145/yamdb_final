@@ -1,14 +1,14 @@
 # Проект YAMDB
 
-[yamdb_final_workflow](https://github.com/monticola/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+[![Actions Status](https://github.com/monticola/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)](https://github.com/monticola/yamdb_final/actions)
 
 ### Ссылки на проект
 
-API link: http://84.252.138.255/api/v1
+API link: http://158.160.44.102/api/v1
 
-ReDoc link: http://84.252.138.255/redoc/
+ReDoc link: http://158.160.44.102/redoc/
 
-Admin's link: http://84.252.138.255/admin/
+Admin's link: http://158.160.44.102/admin/
 
 ### Описание проекта
 

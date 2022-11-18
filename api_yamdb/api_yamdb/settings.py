@@ -4,12 +4,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='secret_key')
 
-DEBUG = False   # идея интересная, но не очень понял как реализовать
-# If os.getenv('SECRET_KEY'):
-#   DEBUG = False
-# else:
-#   DEBUG = True
-# Так?
+DEBUG = os.getenv('DEBUG_STATUS', default=False) # по идее тут же 
+# default = True должно быть, но из-за этого pytest не пускал
 
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
 
@@ -60,7 +56,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
-if DEBUG is False:
+if not DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
