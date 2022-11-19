@@ -4,8 +4,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='secret_key')
 
-DEBUG = os.getenv('DEBUG_STATUS', default=False) # по идее тут же 
-# default = True должно быть, но из-за этого pytest не пускал
+DEBUG = os.getenv('DEBUG_STATUS', default=False)
 
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
 
