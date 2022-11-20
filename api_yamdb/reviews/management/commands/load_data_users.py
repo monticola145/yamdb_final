@@ -2,6 +2,7 @@ from csv import DictReader
 
 from django.conf import settings
 from django.core.management import BaseCommand
+
 from users.models import User
 
 ALREADY_EXISTS_IN_DATA_BASE = """

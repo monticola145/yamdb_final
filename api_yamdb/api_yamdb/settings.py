@@ -6,7 +6,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='secret_key')
 
 DEBUG = os.getenv('DEBUG_STATUS', default=False)
 
-ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS', default='*')]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -73,6 +73,7 @@ else:
             'PORT': os.environ.get('DB_PORT'),
         }
     }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {

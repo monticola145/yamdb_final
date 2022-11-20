@@ -12,6 +12,7 @@ from rest_framework.response import Response
 from rest_framework.validators import ValidationError
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
+
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
 
