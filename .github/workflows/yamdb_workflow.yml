@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: | 
-        python -m pip install --upgrade pip 
+        python -m pip install --upgrade pip
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort==5.0.0
         pip install -r api_yamdb/requirements.txt 
 
@@ -48,7 +48,6 @@ jobs:
         - name: Push to Docker Hub
           uses: docker/build-push-action@v3
           with:
-            context: api_yamdb
             push: true
             tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1.11
 
