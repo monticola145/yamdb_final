@@ -4,11 +4,11 @@
 
 ### Ссылки на проект
 
-API link: http://51.250.94.239/api/v1
+API link: http://ip_adress/api/v1
 
-ReDoc link: http://51.250.94.239/redoc/
+ReDoc link: http://ip_adress/redoc/
 
-Admin's link: http://51.250.94.239/admin/
+Admin's link: http://ip_adress/admin/
 
 ### Описание проекта
 
